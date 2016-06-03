@@ -109,6 +109,11 @@ public class QrcodeWebVIew extends Activity {
     private void checkResult(String result) {
 
         if(result.startsWith("http://")){
+        //若是链接含有weixin就加载下面那个链接,让他下载微信客户端
+            if (result.contains("http://weixin.qq.com")) {
+                url = "https://weixin.qq.com/cgi-bin/readtemplate?t=weixin ";
+            }
+            else
             url=result;
         }
         else{
