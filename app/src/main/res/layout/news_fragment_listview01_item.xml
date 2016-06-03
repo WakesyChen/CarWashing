@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+
+
+    <ImageView
+        android:paddingLeft="3dp"
+        android:id="@+id/item_iv"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:textColor="#000"
+            android:paddingLeft="3dp"
+            android:paddingRight="2dp"
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/time"/>
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-05-27 10:00:18"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </TextView>
+        <TextView
+            android:paddingRight="6dp"
+            android:id="@+id/item_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="潇湘日报"/>
+
+    </LinearLayout>
+
+</LinearLayout>

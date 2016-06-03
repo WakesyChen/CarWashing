@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <!-- 粗分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray">
+
+    </LinearLayout>
+    <!-- 第一个标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp">
+
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:background="@drawable/store" />
+
+        <TextView
+            android:id="@+id/ListItem_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="康桥汽车连锁店01(迎宾北路店)"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!-- 细分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"></LinearLayout>
+    <!-- 图文部分-->
+
+    <LinearLayout
+        android:id="@+id/ListItem_wholeItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/ListItem_img"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/ListItem_address"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="武汉市洪山区李纸路狮子山街道"
+                android:textSize="18sp" />
+            <!-- 设置小的RatingBar-->
+            <RatingBar
+                android:id="@+id/ListItem_ratingBar"
+                style="?android:ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ListItem_address"
+                android:layout_marginTop="8dp"
+              android:rating="3.6"
+                android:numStars="5"
+
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/ListItem_Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ListItem_ratingBar"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/ListItem_ratingBar"
+                android:text="5分"
+                android:textColor="@color/color_pink" />
+
+            <TextView
+                android:id="@+id/ListItem_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ListItem_ratingBar"
+                android:layout_marginTop="8dp"
+                android:text="22条评论"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/ListItem_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ListItem_comments"
+                android:layout_alignParentRight="true"
+                android:text="10.5km"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- 细分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"></LinearLayout>
+<!--最下面买单的布局-->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/ListItem_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通洗车-5座"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        <!-- 补充中间空间-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ListItem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥15"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/ListItem_buy"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_btn"
+            android:textColor="#ffffff"
+            android:text="买单"
+            android:layout_marginLeft="8dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
